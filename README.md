@@ -5,6 +5,7 @@ Geocode Addresses: Returns zip codes for USA, Canada, China, UK addresses from a
 
 **Dependencies**
 - Temboo account (www.temboo.com)
+  - Copy/paste the temboo/Library/Google package into your project directory
 - pyodbc (http://code.google.com/p/pyodbc/)
 
 **Input**
