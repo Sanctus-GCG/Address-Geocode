@@ -1,7 +1,7 @@
 AddressGeocode
 ==============
 
-Returns zip codes for USA, Canada, China, UK addresses from a batch/list in a csv, .txt file or SQL Server database
+Geocode Addresses: Returns zip codes for USA, Canada, China, UK addresses from a batch/list in a csv, .txt file or SQL Server database
 
 **Dependencies**
 - Temboo account (www.temboo.com)
