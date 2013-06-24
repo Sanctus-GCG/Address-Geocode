@@ -3,7 +3,7 @@
 # (c) 2013 Godwin Effiong
 
 '''
-    DAM-Geocoder: geocodes lists of addresses stored in SQL Server database or csv file
+    AddressGeocoder: geocodes lists of addresses stored in SQL Server database or csv file
     Copyright (C) 2013 Godwin Effiong
 
     This program is free software: you can redistribute it and/or modify
