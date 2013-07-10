@@ -23,7 +23,6 @@
 import datetime
 import xml.dom.minidom
 
-#import DatabaseConnection as dbConnection
 import GeocodeAddress as ga
 import ExtractAddressesFromXML as exml
 import DatabaseConnection as dbConn
@@ -38,12 +37,13 @@ GEOCODE_RESULTS_CSV = 'CSV_Files\{}_GeocodeResult.csv'.format(file_name)
 def main():   
    db = dbConn.DatabaseConnection()
    ext = exml.ExtractAddressesFromXML()
-   geo = ga.GeocodeAddress()
-      
-   dbSelect = db.sql_select()         
-   if dbSelect:
+   geo = ga.GeocodeAddress()      
+
+  # db.sql_select()
+            
+   if db.sql_select(): 
       # redirect to Google API and perform geocoding
-      geo.api_connect(dbSelect, XML_STAGING)            
+      geo.api_connect(db.sql_select(), XML_STAGING)            
    
       ## grab the google XML files for each address   
       ext.transform_resultset(XML_STAGING, XML_FINAL)   
