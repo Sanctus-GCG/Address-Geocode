@@ -38,8 +38,6 @@ def main():
    db = dbConn.DatabaseConnection()
    ext = exml.ExtractAddressesFromXML()
    geo = ga.GeocodeAddress()      
-
-  # db.sql_select()
             
    if db.sql_select(): 
       # redirect to Google API and perform geocoding
@@ -70,4 +68,4 @@ def main():
    raw_input()
    
 if __name__ == '__main__':
-   main() 
+   main()
